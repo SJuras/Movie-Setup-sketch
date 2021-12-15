@@ -30,6 +30,38 @@ img {
   height: 100%;
 }
 
+/* Scroll Up Button */
+#btnScrollTop {
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  opacity: 0;
+  background-color: #1e0143;
+  color: #fdda02;
+  border-color: #fdda02;
+  box-shadow: 0 5px 20px rgba(121, 255, 202, 0.3);
+  transition: 0.5s;
+  cursor: pointer;
+  z-index: 99;
+}
+
+#btnScrollTop i {
+  font-size: 24px;
+}
+
+#btnScrollTop.visible {
+  opacity: 1;
+}
+
+#btnScrollTop:active {
+  box-shadow: 0 5px 20px rgba(121, 255, 202, 0.3);
+}
+/* Scroll Up Button END */
+
 /* header */
 header {
   width: 100%;
@@ -39,6 +71,7 @@ header {
   padding: 12px 48px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 1000;
   background-color: #1e0143;
 }
@@ -61,6 +94,60 @@ header ul li a {
 
 header ul li:hover a {
   color: #fff;
+}
+
+.logo-container h2 {
+  color: #fdda02;
+}
+
+.logo-container h2 span {
+  color: #fff;
+}
+
+.header-icons a {
+  margin: 0 10px;
+}
+
+.header-icons a i {
+  color: #fdda02;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.header-icons a:hover i {
+  color: #fff;
+}
+
+@media (max-width: 991.98px){
+  .header-icons {
+    display: none;
+  }
+}
+
+.toggle {
+  display: none;
+}
+
+@media (max-width: 991.98px){
+  .toggle {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../img/menu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .toggle.active {
+    background: url("../img/close.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+  }
 }
 /* header END */
 
@@ -111,6 +198,15 @@ footer {
   .footer-segment-smaller {
     margin-bottom: 36px;
   }
+}
+
+.footer-segment-smaller h4 {
+  color: #fdda02;
+  font-size: 24px;
+}
+
+.footer-segment-smaller h4 span {
+  color: #fff;
 }
 
 .footer-segment-smaller p {
@@ -192,6 +288,7 @@ footer {
 @media (max-width: 575.98px) {
   .footer-row-2 p {
     margin-bottom: 6px;
+    font-size: 14px;
   }
 }
 
