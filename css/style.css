@@ -332,6 +332,8 @@ header ul li:hover a {
   height: 450px;
   box-shadow: 0px 0px 12px rgba(0,0,0,0.3);
   transition: 0.4s;
+  background: -webkit-linear-gradient(145deg, #fff 0%, #fff 80%, #1e0143 80%, #1e0143 100%);
+  background: linear-gradient(145deg, #fdda02 0%, #fdda02 10%, #fff 10%, #fff 80%, #1e0143 80%, #1e0143 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -341,6 +343,20 @@ header ul li:hover a {
 
 .services-box:hover {
   transform: scale(1.1);
+}
+
+.services-box i {
+  font-size: 70px;
+  margin-bottom: 18px;
+  display: block;
+  padding: 24px;
+  border-radius: 50%;
+  color: #fdda02;
+  background-color: #1e0143;
+}
+
+.services-box h4 {
+  font-size: 24px;
 }
 
 .services-adons-inner {
