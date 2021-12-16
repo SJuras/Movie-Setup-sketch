@@ -256,6 +256,140 @@ header ul li:hover a {
 }
 /* hero section END */
 
+/* about */
+.about-section {
+  padding-top: 60px;
+  padding-bottom: 42px;
+}
+
+.about-inner {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 991.98px) {
+  .about-inner {
+    flex-direction: column;
+  }
+}
+
+.about-half {
+  width: 50%;
+}
+
+@media (max-width: 991.98px) {
+  .about-half {
+    width: 100%;
+  }
+
+  .about-half h3 {
+    text-align: center;
+  }
+}
+/* about END */
+
+/* services */
+.services-section {
+  padding-top: 60px;
+  padding-bottom: 42px;
+}
+
+.services-inner {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+}
+
+.services-box {
+  width: 350px;
+  height: 450px;
+  box-shadow: 0px 0px 12px rgba(0,0,0,0.3);
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.services-box:hover {
+  transform: scale(1.1);
+}
+
+.services-adons-inner {
+  width: 80%;
+  margin: 0 auto;
+}
+/* services END */
+
+/* packages */
+.packages-section {
+  background-color: #eee;
+  padding-top: 60px;
+  padding-bottom: 42px;
+}
+/* packages END */
+
+/* contact */
+.contact {
+  padding-top: 60px;
+  padding-bottom: 42px;
+}
+
+.contact-inner {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-half {
+  width: 50%;
+}
+
+.contact-row {
+  width: 100%;
+}
+
+.contact-row input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 6px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  padding: 16px;
+  margin-bottom: 6px;
+  height: 200px;
+}
+
+.contact-row-2 input[type='submit'] {
+  display: block;
+  padding: 12px 30px;
+  text-align: center;
+  font-size: 18px;
+  background-color: #1e0143;
+  border: 2px solid #1e0143;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.contact-row-2 input[type='submit']:hover {
+  background-color: #fdda02;
+  color: #1e0143;
+}
+/* contact END */
+
 /* footer */
 footer {
   padding: 12px 48px;
