@@ -203,6 +203,7 @@ header ul li:hover a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 24px;
 }
 
 .main-screen h1 {
@@ -215,7 +216,7 @@ header ul li:hover a {
 }
 
 .main-screen-img {
-  width: 400px;
+  max-width: 400px;
   height: auto;
 }
 
@@ -289,6 +290,15 @@ header ul li:hover a {
     text-align: center;
   }
 }
+
+.about-half-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 12px 12px 12px rgba(0,0,0,0.1);
+}
+
 /* about END */
 
 /* services */
@@ -350,8 +360,32 @@ header ul li:hover a {
   align-items: center;
 }
 
+@media (max-width: 991.98px) {
+  .contact-inner {
+    flex-direction: column;
+  }
+}
+
 .contact-half {
   width: 50%;
+}
+
+
+@media (max-width: 991.98px) {
+  .contact-half {
+    width: 100%;
+  }
+}
+
+.contact-form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 991.98px) {
+  .contact-form {
+    width: 100%;
+  }
 }
 
 .contact-row {
