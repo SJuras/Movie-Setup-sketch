@@ -62,6 +62,35 @@ img {
 }
 /* Scroll Up Button END */
 
+/* buttons */
+.btn,
+.btn-special {
+  display: block;
+  padding: 12px 24px;
+  margin: 24px;
+  text-align: center;
+  font-size: 24px;
+  transition: 0.4s;
+}
+
+.btn {
+  background-color: #1e0143;
+  border: 2px solid #1e0143;
+  color: #fff;
+}
+
+.btn-special {
+  border: 2px solid #1e0143;
+  background-color: #fdda02;
+  color: #1e0143;
+}
+
+.btn:hover,
+.btn-special:hover {
+  transform: scale(1.1);
+}
+/* buttons END */
+
 /* header */
 header {
   width: 100%;
@@ -96,11 +125,12 @@ header ul li:hover a {
   color: #fff;
 }
 
-.logo-container h2 {
+.logo-container h1 {
   color: #fdda02;
+  font-size: 24px;
 }
 
-.logo-container h2 span {
+.logo-container h1 span {
   color: #fff;
 }
 
@@ -165,7 +195,7 @@ header ul li:hover a {
 
 .main-screen {
   width: 80%;
-  height: 60%;
+  height: 70%;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 12px rgba(255,255,255,1);
@@ -177,16 +207,23 @@ header ul li:hover a {
 
 .main-screen h1 {
   color: #fdcd01;
-  font-size: 72px;
+  font-size: 100px;
 }
 
 .main-screen h1 span {
   color: #1e0143;
 }
 
+.main-screen-img {
+  width: 400px;
+  height: auto;
+}
+
 .main-screen h2 {
   font-size: 42px;
   margin-bottom: 24px;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .main-screen h4 {
@@ -196,6 +233,10 @@ header ul li:hover a {
 .main-screen h4.bigger-sub {
   font-size: 30px;
   margin-bottom: 30px;
+}
+
+.btn-container {
+  display: flex;
 }
 
 .scroll-down-section {
