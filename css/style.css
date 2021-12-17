@@ -82,13 +82,29 @@ img {
 .btn {
   background-color: #1e0143;
   border: 2px solid #1e0143;
-  color: #fff;
+  color: #fdda02;
+}
+
+@media (max-width: 575.98px) {
+  .btn {
+    font-size: 16px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
 }
 
 .btn-special {
   border: 2px solid #1e0143;
   background-color: #fdda02;
   color: #1e0143;
+}
+
+@media (max-width: 575.98px) {
+  .btn-special {
+    font-size: 16px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
 }
 
 .btn:hover,
@@ -219,6 +235,48 @@ header ul li:hover a {
     cursor: pointer;
   }
 }
+
+@media (max-width: 991.98px) {
+  header ul {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    z-index: 999;
+    transition: 0.6s;
+    height: 100vh;
+    width: 50%;
+    background-color: #1e0143;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  header ul.active {
+    right: 0;
+  }
+
+  header ul li {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  header ul li a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  header ul {
+    width: 75%;
+  }
+}
+
+@media (max-width: 576px) {
+  header ul {
+    width: 100%;
+  }
+}
 /* header END */
 
 /* hero section */
@@ -266,6 +324,12 @@ header ul li:hover a {
   }
 }
 
+@media (max-width: 575.98px) {
+  .main-screen-img {
+    max-width: 150px;
+  }
+}
+
 .main-screen h2 {
   font-size: 42px;
   margin-bottom: 24px;
@@ -304,6 +368,12 @@ header ul li:hover a {
 
 .btn-container {
   display: flex;
+}
+
+@media (max-width: 575.98px) {
+  .btn-container {
+    flex-direction: column;
+  }
 }
 
 .scroll-down-section {
@@ -389,6 +459,12 @@ header ul li:hover a {
 .services-section {
   padding-top: 60px;
   padding-bottom: 42px;
+}
+
+@media (max-width: 991.98px) {
+  .services-section {
+    padding-top: 70px;
+  }
 }
 
 .services-inner {
@@ -480,12 +556,24 @@ header ul li:hover a {
   padding-top: 60px;
   padding-bottom: 42px;
 }
+
+@media (max-width: 991.98px) {
+  .packages-section {
+    padding-top: 70px;
+  }
+}
 /* packages END */
 
 /* contact */
 .contact {
   padding-top: 60px;
   padding-bottom: 42px;
+}
+
+@media (max-width: 991.98px) {
+  .contact {
+    padding-top: 70px;
+  }
 }
 
 .contact-inner {
@@ -550,7 +638,7 @@ textarea {
   font-size: 18px;
   background-color: #1e0143;
   border: 2px solid #1e0143;
-  color: #fff;
+  color: #fdda02;
   transition: 0.4s;
   cursor: pointer;
 }

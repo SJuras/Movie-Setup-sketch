@@ -1,3 +1,12 @@
+// toggle menu
+function toggle(){
+  const sidemenu = document.querySelector("header ul");
+  const toggle = document.querySelector(".toggle");
+  sidemenu.classList.toggle("active");
+  toggle.classList.toggle("active");
+}
+// toggle menu END
+
 // smooth scroll
 var scroll = new SmoothScroll('a[href*="#"]', {
 	speed: 1000,
@@ -18,4 +27,4 @@ btnScrollTop.addEventListener("click", function(){
     behavior: "smooth"
   });
 });
-// scroll up button END 
+// scroll up button END
