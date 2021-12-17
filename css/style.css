@@ -60,6 +60,12 @@ img {
 #btnScrollTop:active {
   box-shadow: 0 5px 20px rgba(121, 255, 202, 0.3);
 }
+
+@media (max-width: 575.98px) {
+  #btnScrollTop {
+    bottom: 20px;
+  }
+}
 /* Scroll Up Button END */
 
 /* buttons */
@@ -254,11 +260,24 @@ header ul li:hover a {
   height: auto;
 }
 
+@media (max-width: 991.98px) {
+  .main-screen-img {
+    max-width: 300px;
+  }
+}
+
 .main-screen h2 {
   font-size: 42px;
   margin-bottom: 24px;
   text-transform: uppercase;
   font-weight: 300;
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .main-screen h2 {
+    font-size: 30px;
+  }
 }
 
 .main-screen h4 {
@@ -266,9 +285,21 @@ header ul li:hover a {
   text-align: center;
 }
 
+@media (max-width: 991.98px) {
+  .main-screen h4 {
+    font-size: 18px;
+  }
+}
+
 .main-screen h4.bigger-sub {
   font-size: 30px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 991.98px) {
+  .main-screen h4.bigger-sub {
+    font-size: 22px;
+  }
 }
 
 .btn-container {
@@ -284,6 +315,7 @@ header ul li:hover a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .scroll-down-section p,
@@ -461,7 +493,7 @@ header ul li:hover a {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 @media (max-width: 991.98px) {
@@ -525,6 +557,48 @@ textarea {
 
 .contact-row-2 input[type='submit']:hover {
   background-color: #fdda02;
+  color: #1e0143;
+}
+
+.contact-info {
+  margin: 0 auto;
+  width: 70%;
+}
+
+@media (max-width: 991.98px) {
+  .contact-info {
+    width: 100%;
+  }
+}
+
+.contact-info h4 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #1e0143;
+}
+
+.contact-info ul {
+  margin-bottom: 42px;
+}
+
+.contact-info ul li {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.contact-info ul li i {
+  padding: 12px;
+  color: #fdda02;
+  background-color: #1e0143;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.contact-info ul li i.first-icon {
+  padding: 12px 14px;
+}
+
+.contact-info ul li a {
   color: #1e0143;
 }
 /* contact END */
