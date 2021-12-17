@@ -100,6 +100,29 @@ img {
   flex-direction: column;
   padding-bottom: 54px;
 }
+
+.title-section h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.title-section h2 {
+  color: #1e0143;
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.title-section p {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 991.98px) {
+  .title-section p {
+    width: 80%;
+  }
+}
 /* title END */
 
 /* header */
@@ -240,6 +263,7 @@ header ul li:hover a {
 
 .main-screen h4 {
   font-size: 24px;
+  text-align: center;
 }
 
 .main-screen h4.bigger-sub {
@@ -288,13 +312,30 @@ header ul li:hover a {
   }
 }
 
+.inner-padding {
+  padding-right: 36px;
+}
+
+@media (max-width: 991.98px){
+  .inner-padding {
+    padding-right: 0px;
+  }
+}
+
 .about-half {
   width: 50%;
+}
+
+.about-half h3 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #1e0143;
 }
 
 @media (max-width: 991.98px) {
   .about-half {
     width: 100%;
+    margin-bottom: 24px;
   }
 
   .about-half h3 {
@@ -373,7 +414,8 @@ header ul li:hover a {
   width: 350px;
   height: 250px;
   box-shadow: 0px 0px 12px rgba(0,0,0,0.3);
-  background-color: #fff;
+  background: -webkit-linear-gradient(45deg, #fff 0%, #fff 80%, #1e0143 80%, #1e0143 100%);
+  background: linear-gradient(45deg, #fdda02 0%, #fdda02 10%, #fff 10%, #fff 80%, #1e0143 80%, #1e0143 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -384,6 +426,19 @@ header ul li:hover a {
 
 .addon-box:hover {
   transform: scale(1.1);
+}
+
+.addon-box i {
+  font-size: 36px;
+  padding: 16px;
+  color: #1e0143;
+  background-color: #fdda02;
+  margin-bottom: 6px;
+}
+
+.addon-box h5 {
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 /* services END */
 
@@ -434,6 +489,7 @@ header ul li:hover a {
 @media (max-width: 991.98px) {
   .contact-form {
     width: 100%;
+    margin-bottom: 30px;
   }
 }
 
